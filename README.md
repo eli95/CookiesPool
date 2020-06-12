@@ -9,25 +9,25 @@ REDIS_PORT = 6379
 # Redis密码，如无填None
 REDIS_PASSWORD = None
 
-# 产生器使用的浏览器
+# 生成器使用的浏览器
 BROWSER_TYPE = 'Chrome'
 
-# 产生器类，如扩展其他站点，请在此配置
+# 生成器类
 GENERATOR_MAP = {
     'robo': 'RoboCookiesGenerator'
 }
 
-# 测试类，如扩展其他站点，请在此配置
+# 验证器类
 TESTER_MAP = {
     'robo': 'RoboValidTester',
 }
 
-# 检测器检测接口
+# 验证器验证接口
 TEST_URL_MAP = {
     'robo': 'https://gw.datayes.com/rrp_adventure/web/kmap/company/info?ticker=000001',
 }
 
-# 产生器和验证器循环周期
+# 生成器和验证器循环周期
 CYCLE = 3600
 
 # API地址和端口
