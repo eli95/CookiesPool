@@ -61,15 +61,15 @@ class RoboCookies(object):
         :return:
         """
         self.open()
-        if self.password_error():
-            return {
-                'status': 2,
-                'content': '账号密码不匹配',
-            }
-
         if self.login_successfully():
             cookies = self.get_cookies()
             return {
                 'status': 1,
                 'content': cookies,
+            }
+
+        if self.password_error():
+            return {
+                'status': 2,
+                'content': '账号密码不匹配',
             }
